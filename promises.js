@@ -44,6 +44,16 @@ async function init() {
 
 init();
 
+// Async / Await / Fetch
+
+async function fetchUsers() {
+  const res = await fetch("");
+  const data = await res.json();
+  console.log(data);
+}
+
+fetchUsers();
+
 /* // Promise.all
 const promise1 = Promise.resolve("Hello World");
 const promise2 = 10;
