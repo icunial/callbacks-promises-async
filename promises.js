@@ -30,4 +30,6 @@ function createPost(post) {
 
 createPost({ title: "Post Three", body: "This is post three" })
   .then(getPosts)
-  .catch();
+  .catch((value) => {
+    console.log(value);
+  });
